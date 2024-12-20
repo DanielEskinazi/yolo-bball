@@ -1,0 +1,18 @@
+model:
+  path: yolov8n.pt
+  conf_threshold: 0.25
+  iou_threshold: 0.45
+
+classes:
+  person: 0
+  basketball: 32
+
+data:
+  input_dir: data
+  output_dir: output
+  models_dir: models
+
+detection:
+  save_results: true
+  show_video: true
+  video_output_format: mp4v
